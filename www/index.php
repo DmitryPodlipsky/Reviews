@@ -26,7 +26,7 @@ if (!empty($allarray)):
 		?>
 	
 			<div class="comment_box">
-			
+			<div class="group_name_data">
 				<?
 				if (!empty($value['name'])):
 				?>
@@ -43,6 +43,7 @@ if (!empty($allarray)):
 				<?
 				endif;
 				?>
+			</div>
 	
 				<?
 				if (!empty($value['comments'])):
@@ -53,13 +54,6 @@ if (!empty($allarray)):
 				?>
 			</div>
 
-
-			<div class="comment_box_app">
-				<div class="name"></div>
-				<div class="data"></div>
-				<div class="comment_text"></div>
-				
-			</div>
 		<?
 		endforeach;
 		?>
@@ -71,16 +65,18 @@ endif;
 
 <form id="myform" name="comment" action="js/handler.php" method="POST">
 	<hr>
-	<h3>Оставить комментарий</h3>
+	<h3 class="form_title">Оставить комментарий</h3>
+	<div class="form_area">
 	<p>
 		<label>Ваше имя</label><br>
-		<input id="name" type="text" name="name">
+		<input required="required" class="form_name" id="name" type="text" name="name">
 	</p>
 	<p>
 		<label>Ваш комментарий</label><br>
-		<textarea id="comments" name="text_comment"></textarea>
+		<textarea required="required" class="form_comment" id="comments" name="text_comment"></textarea>
 	</p>
-	<input id="btn" type="submit" value="Отправить">
+	<input class="btn" id="btn" type="submit" value="Отправить">
+	</div>
 </form>
 
 <?php include ("footer.php");?>	

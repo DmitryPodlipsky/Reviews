@@ -48,15 +48,95 @@ header {
 
 
 .comment_group {
-	margin: 41px 10% 0 10%;
+	margin: 41px 10% 0 9%;
+
 }
 
+.comment_box {
+	width: 462px;
+	margin: 38px 0 0 0;	
+}
+
+.group_name_data {
+	display: flex;
+}
+
+.name {
+	margin:0 40px 15px 0;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Roboto;
+}
+
+.data {
+	margin-top: 5px;
+	font-size: 14px;
+	font-weight: lighter;
+	font-family: Roboto;
+	color: #636363;
+} 
+
+.comment_text {
+	font-size: 18px;
+	font-weight: lighter;
+	font-family: Roboto;
+	color: #636363;
+}
 #myform {
+	margin: 0 9%;
+}
+
+.form_title {
+	margin: 30px 0;
+	font-size: 24px;
+	font-family: Roboto;
+	font-weight: normal;
+}
+
+.form_area {
+	max-width: 462px;
+}
+label {
+	font-size: 15px;
+	font-weight: normal;
+	font-family: Roboto;
+	color: #636363;
+}
+
+input,
+textarea {
+	box-sizing: border-box;
+	width: 462px;
+	margin: 15px 0;
+	background: #eeeeee;
+	border: 2px solid #000;
+	border-radius: 3px;
+
+}
+
+.form_name{
+	height: 45px;
+
+}
+
+.form_comment {
+	height: 135px;
+	resize: none;
+
+}
+.btn {
+	width: 130px;
+	height: 40px;
+	margin: 0 0 40px 0;
+	float: right;
 }
 
 
-
-
+input:focus,
+textarea:focus {
+	border: none;
+	background: #fff;
+}
 
 
 footer {
@@ -68,7 +148,7 @@ footer {
 }
 
 .footer_block {
-	margin: 18px 0 14px 10%;
+	margin: 18px 0 14px 9%;
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -79,4 +159,19 @@ footer {
 .footer_block img {
 	width: 106px;	
 	height: 109px;
+}
+
+.footer_info {
+	margin:20px 0 14px 40px; 
+	line-height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	font-family: Roboto;
+} 
+.copyright {
+	font-size: 15px;
+	font-weight: lighter;
+	font-family: Roboto;
+	padding-top: 12px;
+
 }
